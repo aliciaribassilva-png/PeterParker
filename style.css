@@ -1,0 +1,187 @@
+.menu-navegacao {
+    background-color: #af5555;
+    padding: 15px;
+    text-align: center;
+}
+
+.menu-navegacao ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-navegacao li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.menu-navegacao a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu-navegacao a:hover {
+    color: #fffde9;
+}
+
+
+
+.banner1 {
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.banner1 img {
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+}
+
+
+.estudante {
+    padding: 50px 8%;
+    text-align: center;
+}
+
+.estudante_titulo {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+
+/* Grade dos filmes */
+
+.estudantes_todos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+
+
+.estudante-div {
+    background-color: #fdfbfb;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(20, 14, 66, 0.473);
+    transition: 0.3s;
+}
+
+.estudante-div:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(14, 21, 54, 0.603);
+}
+
+
+.estudante-imagem {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+
+.estudante-nome {
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+
+/* Ícone/link */
+
+.estudante-icone {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.estudante-icone:hover {
+    transform: scale(1.15);
+}
+
+.container-video {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f3f3f3;
+}
+
+.titulo-video {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.container-video iframe {
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+
+/* =========================================
+   SEÇÃO SOBRE
+========================================= */
+
+#sobre {
+    background-color: #fffef6;
+}
+
+
+/* =========================================
+   RODAPÉ
+========================================= */
+
+.escola {
+    text-align: center;
+    padding: 30px;
+    background-color: #af5555;
+    color: rgb(174, 83, 83);
+}
+
+.logo_rodape {
+    max-width: 150px;
+    border-radius: 10px;
+}
+
+
+/* =========================================
+   RESPONSIVIDADE
+   Para celulares
+========================================= */
+
+@media (max-width: 800px) {
+
+    .estudantes_todos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .menu-navegacao li {
+        margin: 8px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .estudantes_todos {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-navegacao li {
+        display: block;
+        margin: 12px;
+    }
+
+    .estudante {
+        padding: 40px 20px;
+    }
+
+}
